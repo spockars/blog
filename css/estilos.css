@@ -1,0 +1,91 @@
+body {
+  background-color: #02010a;
+  font-family: 'DancingScript-bold', cursive;
+  font-size: 24px;
+  text-shadow: 2px 4px 2px #02010a;
+}
+.contenedor{
+  margin: auto;
+  width: 80%;
+}
+header {
+  width: 100%;
+  background-color: #5b7989;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+p {
+  margin-left: 20px;
+}
+p, nav {
+  display: inline;
+}
+nav{
+  float: right;
+}
+a{
+  color: inherit;
+  padding-right: 15px;
+}
+a[href]:hover {
+  text-decoration: none;
+  /*  La página actual debe tener estilo sin subrayado */
+}
+.imagen{
+ padding-top:  1px;
+ width: 100%;
+ background-color: #82c3a6;
+}
+figure {
+  width: 50%;
+  margin: auto;
+}
+.imagen, figure{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  background-color:  #d5c75f;
+  display: flex;
+  border: 1px;
+}
+.sec {
+  width: 50%;
+  padding: 20px;
+}
+.section {
+  border: 1px solid;
+}
+#sec1:hover{
+-webkit-transform: rotate(10deg);
+-moz-transform: rotate(10deg);
+-o-transform: rotate(10deg);
+
+}
+#sec2:hover {
+  -webkit-transform: translate(20px,-5px);
+  -moz-transform: translate(20px,-5px);
+  -o-transform: translate(20px,-5px);
+}
+/* falta bordes y sombras*/
+footer {
+  background-color: #C6d5c5;
+  width: 100%;
+  height: 300px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+}
+footer .pie {
+  width: 25%;
+  text-align: center;
+  text-shadow: none;
+  font-size: 18px;
+}
