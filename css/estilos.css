@@ -30,7 +30,7 @@ a{
   color: inherit;
   padding-right: 15px;
 }
-a[href]:hover {
+a[href]:hover{
   text-decoration: none;
   /*  La página actual debe tener estilo sin subrayado */
 }
@@ -54,7 +54,6 @@ figure {
 section {
   background-color:  #d5c75f;
   display: flex;
-  border: 1px;
 }
 .sec {
   width: 50%;
@@ -67,7 +66,6 @@ section {
 -webkit-transform: rotate(10deg);
 -moz-transform: rotate(10deg);
 -o-transform: rotate(10deg);
-
 }
 #sec2:hover {
   -webkit-transform: translate(20px,-5px);
