@@ -6,7 +6,7 @@ body {
 }
 .contenedor{
   margin: auto;
-  width: 80%;
+  max-width: 90%;
 }
 header {
   width: 100%;
@@ -14,18 +14,13 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-p {
-  margin-left: 20px;
-}
-p, nav {
-  display: inline;
-}
-nav{
-  float: right;
-}
+
 a{
   color: inherit;
   padding-right: 15px;
@@ -33,6 +28,9 @@ a{
 a[href]:hover{
   text-decoration: none;
   /*  La página actual debe tener estilo sin subrayado */
+}
+.text {
+  margin-left: 15px;
 }
 .imagen{
  padding-top:  1px;
@@ -59,9 +57,6 @@ section {
   width: 50%;
   padding: 20px;
 }
-.section {
-  border: 1px solid;
-}
 #sec1:hover{
 -webkit-transform: rotate(10deg);
 -moz-transform: rotate(10deg);
@@ -76,14 +71,34 @@ section {
 footer {
   background-color: #C6d5c5;
   width: 100%;
-  height: 300px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex;
 }
 footer .pie {
   width: 25%;
-  text-align: center;
   text-shadow: none;
-  font-size: 18px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 900px){
+  header {
+    display: block;
+    text-align: center;
+  }
+ figure {
+   width: 80%;
+ }
+ section  {
+   flex-wrap: wrap;
+
+ }
+ .sec {
+   width: 100%;
+ }
+ footer {
+   flex-direction: column;
+   align-items: flex-start;
+ }
+
 }
